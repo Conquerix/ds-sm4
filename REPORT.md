@@ -4,7 +4,30 @@ Table of content
 
 ---
 
-[TOC]
+- [Implementation of a hardware accelerator for the SM4 block cipher](#implementation-of-a-hardware-accelerator-for-the-sm4-block-cipher)
+- [Team Members](#team-members)
+- [Introduction](#introduction)
+- [Block and States diagram](#block-and-states-diagram)
+- [VHDL Source files](#vhdl-source-files)
+  * [[`Work` Files](/vhdl/crypto)](#--work--files---vhdl-crypto-)
+    + [[Crypto](/vhdl/crypto/crypto.vhd)](#-crypto---vhdl-crypto-cryptovhd-)
+    + [[Counter](/vhdl/crypto/counter.vhd)](#-counter---vhdl-crypto-countervhd-)
+    + [[Key Expansion](/vhdl/crypto/key_expansion.vhd)](#-key-expansion---vhdl-crypto-key-expansionvhd-)
+    + [[Round Funtion Engine](/vhdl/crypto/round_function_engine.vhd)](#-round-funtion-engine---vhdl-crypto-round-function-enginevhd-)
+    + [[Xor Engine](/vhdl/crypto/xor_engine.vhd)](#-xor-engine---vhdl-crypto-xor-enginevhd-)
+    + [[AXI Slave Controller](/vhdl/crypto/slave_axi_ctrl.vhd)](#-axi-slave-controller---vhdl-crypto-slave-axi-ctrlvhd-)
+    + [[AXI Master Controller](/vhdl/crypto/master_axi_ctrl.vhd)](#-axi-master-controller---vhdl-crypto-master-axi-ctrlvhd-)
+  * [[`SM4` and `common` Files](/vhdl/common)](#--sm4--and--common--files---vhdl-common-)
+    + [[SM4 Package](/crypto/common/sm4_pkg.vhd)](#-sm4-package---crypto-common-sm4-pkgvhd-)
+- [Design choices](#design-choices)
+- [Validation](#validation)
+- [Synthesis results](#synthesis-results)
+- [Performance](#performance)
+- [Software components](#software-components)
+    + [[Crypto Sim](/vhdl/crypto/crypto_sim.vhd)](#-crypto-sim---vhdl-crypto-crypto-simvhd-)
+    + [[AXI Memory Optimized](/vhdl/common/axi_memory_optimized.vhd)](#-axi-memory-optimized---vhdl-common-axi-memory-optimizedvhd-)
+    + [[Text Generating Python Script](/Python/text_sample.py)](#-text-generating-python-script---python-text-samplepy-)
+    + [[Shell Script for Automated Tests](/launch_sim.sh)](#-shell-script-for-automated-tests---launch-simsh-)
 
 ---
 
