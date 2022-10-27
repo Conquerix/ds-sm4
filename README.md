@@ -15,7 +15,31 @@ The final project of the DigitalSystems course
 
 ---
 
-[TOC]
+- [Evaluation](#evaluation)
+- [Functional specifications](#functional-specifications)
+  * [Notations](#notations)
+  * [Encryption / decryption](#encryption---decryption)
+  * [The `s0_axi` 32-bits AXI4 lite slave interface](#the--s0-axi--32-bits-axi4-lite-slave-interface)
+  * [The `m0_axi` 32-bits AXI4 lite master interface](#the--m0-axi--32-bits-axi4-lite-master-interface)
+- [Interface specifications](#interface-specifications)
+- [Performance specifications](#performance-specifications)
+- [Functional validation](#functional-validation)
+- [Logic synthesis](#logic-synthesis)
+- [Test on the Zybo](#test-on-the-zybo)
+  * [Testing with `devmem`](#testing-with--devmem-)
+    + [Store an input message somewhere in memory](#store-an-input-message-somewhere-in-memory)
+    + [Pass the parameters to `crypto`](#pass-the-parameters-to--crypto-)
+    + [Launch the encryption](#launch-the-encryption)
+    + [Wait until the encryption finishes](#wait-until-the-encryption-finishes)
+    + [Read the result](#read-the-result)
+    + [Power off](#power-off)
+  * [Testing with a simple C application](#testing-with-a-simple-c-application)
+    + [Compile the test application for your host PC and test it](#compile-the-test-application-for-your-host-pc-and-test-it)
+    + [Cross-compile the test application for the Zybo](#cross-compile-the-test-application-for-the-zybo)
+    + [Generate test data files](#generate-test-data-files)
+    + [Run the test application on the Zybo](#run-the-test-application-on-the-zybo)
+    + [Power off](#power-off-1)
+    + [Adding a hardware timer for performance measurements](#adding-a-hardware-timer-for-performance-measurements)
 
 ---
 
