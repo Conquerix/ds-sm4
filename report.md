@@ -9,25 +9,25 @@ Table of content
 - [Introduction](#introduction)
 - [Block and States diagram](#block-and-states-diagram)
 - [VHDL Source files](#vhdl-source-files)
-  * [`Work` Files](#--work--files---vhdl-crypto-)
-    + [Crypto](#-crypto---vhdl-crypto-cryptovhd-)
-    + [Counter](#-counter---vhdl-crypto-countervhd-)
-    + [Key Expansion](#-key-expansion---vhdl-crypto-key-expansionvhd-)
-    + [Round Funtion Engine](#-round-funtion-engine---vhdl-crypto-round-function-enginevhd-)
-    + [Xor Engine](#-xor-engine---vhdl-crypto-xor-enginevhd-)
-    + [AXI Slave Controller](#-axi-slave-controller---vhdl-crypto-slave-axi-ctrlvhd-)
-    + [AXI Master Controller](#-axi-master-controller---vhdl-crypto-master-axi-ctrlvhd-)
-  * [`SM4` and `common` Files](#--sm4--and--common--files---vhdl-common-)
-    + [SM4 Package](#-sm4-package---crypto-common-sm4-pkgvhd-)
+  * [`Work` Files](#work-files)
+    + [Crypto](#crypto)
+    + [Counter](#counter)
+    + [Key Expansion](#key-expansion)
+    + [Round Funtion Engine](#round-funtion-engine)
+    + [Xor Engine](#xor-engine)
+    + [AXI Slave Controller](#axi-slave-controller)
+    + [AXI Master Controller](#axi-master-controller)
+  * [`SM4` and `common` Files](#sm4-and-common-files)
+    + [SM4 Package](#sm4-package)
 - [Design choices](#design-choices)
 - [Validation](#validation)
 - [Synthesis results](#synthesis-results)
 - [Performance](#performance)
 - [Software components](#software-components)
-    + [Crypto Sim](#-crypto-sim---vhdl-crypto-crypto-simvhd-)
-    + [AXI Memory Optimized](#-axi-memory-optimized---vhdl-common-axi-memory-optimizedvhd-)
-    + [Text Generating Python Script](#-text-generating-python-script---python-text-samplepy-)
-    + [Shell Script for Automated Tests](#-shell-script-for-automated-tests---launch-simsh-)
+    + [Crypto Sim](#crypto-sim)
+    + [AXI Memory Optimized](#axi-memory-optimized)
+    + [Text Generating Python Script](#text-generating-python-script)
+    + [Shell Script for Automated Tests](#shell-script-for-automated-tests)
 
 ---
 
@@ -59,7 +59,7 @@ This is the global file where everything is instantiated, it has a state machine
 
 ### [Counter](/vhdl/crypto/counter.vhd)
 
-Simple clock counter, made during [Lab 6](https://gitlab.eurecom.fr/renaud.pacalet/ds/-/tree/Pierre.Fournier/vhdl/lab06).
+Simple clock counter, made during [Lab 6](https://github.com/PierreFrn/ds/tree/main/vhdl/lab06).
 
 ### [Key Expansion](/vhdl/crypto/key_expansion.vhd)
 
